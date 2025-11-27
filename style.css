@@ -94,38 +94,30 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 25px;
 }
 
+/* Plain text for phone & email */
+.contact-text {
+    font-size: 1.1rem;
+    color: #fff; /* or #333 in light mode */
+    text-align: center;
+}
+
+/* GitHub button */
 .contact-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     color: #fff;
     background-color: #007bff;
-    padding: 15px 30px;
-    border-radius: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
 }
 
 .contact-btn:hover {
     background-color: #0056b3;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-.contact-info {
-    font-weight: normal;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    color: #e0e0e0;
 }
 
 /* DARK MODE */
