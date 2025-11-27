@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Ashley Kyle P. Siton</h1>
-         <img src="profile.png" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Course - Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>1st Term DL</li>
-            <li>2nd Term DL</li>
-            <li>3rd Term PL</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Project 1: FoodHub POS System</li>
-            <li>Project 2: Technician Repair Tracker System</li>
-           
-         </ul>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">My Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projects</a>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+    </header>
+    <section id="home" class="hero">
+        <img src="profile.png" alt="Profile Picture" class="hero-img">
+        <h2>Hi, I'm <span class="highlight">Ashley Kyle P. Siton</span></h2>
+        <p>Computer Science Student</p>
+        <p class="small-desc">Passionate about building projects and learning new technologies.</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a Computer Science student who loves exploring technology and creating projects.        
+        </p>
+    </section>
+    <section id="achievements">
+        <h2>Achievements / Certifications</h2>
+        <ul>
+            <li>1st Term Dean's List</li>
+            <li>2nd Term Dean's List</li>
+            <li>3rd Term President's List</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Previous Projects</h2>
+        <ul>
+            <li>FoodHub POS System</li>
+            <li>Technician Repair Tracker System</li>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2025 Ashley Kyle Siton</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
