@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 header {
     background-color: #ffffff;
@@ -59,9 +63,10 @@ nav a:hover {
 /* SECTIONS */
 section {
     margin: 40px 20px;
-    padding: 20px;
+    padding: 40px 20px;
     background: #fff;
     border-radius: 10px;
+    min-height: 80vh;
 }
 
 h2 {
