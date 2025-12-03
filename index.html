@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#ffffff">
 </head>
-<body class = "dark">
+<body>
     <header>
         <h1 class="logo">Portfolio</h1>
-        <button id = "nav-toggle" aria-label="Toggle navivation"> N</button>
-        <nav id = "main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav" aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#achievements">Achievements</a>
             <a href="#projects">Projects</a>
-            <a href ="#assessments">Course Assessments</a>
+            <a href="#assessments">Course Assessments</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button id="theme-toggle" aria-pressed="false">🔦</button>
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode"></button>
     </header>
-<main>
-    <section id="home" class="hero">
+
+    <main>
+        <section id="home" class="hero reveal-on-scroll">
             <img src="profile.jpg" alt="Profile Picture" class="hero-img">
             <div class="hero-text">
                 <p class="hero-kicker">Computer Science Student • 2nd Year</p>
@@ -30,15 +35,16 @@
                 <p class="small-desc">I enjoy building projects, solving problems, and learning new technologies.</p>
             </div>
         </section>
-    
-        <section id="about">
+
+        <section id="about" class="reveal-on-scroll delay-1">
             <h2>About Me</h2>
             <p>
                 I'm a Computer Science student at Mapua Malayan Colleges Mindanao who loves exploring technology,
                 creating projects, and continuously improving my skills.
             </p>
         </section>
-       <section id="achievements">
+
+        <section id="achievements" class="reveal-on-scroll delay-2">
             <h2>Achievements / Certifications</h2>
             <ul class="pill-list">
                 <li>1st Term Dean's List</li>
@@ -46,7 +52,8 @@
                 <li>3rd Term President's List</li>
             </ul>
         </section>
-        <section id="projects">
+
+        <section id="projects" class="reveal-on-scroll delay-3">
             <h2>Previous Projects</h2>
             <ul class="card-list">
                 <li>
@@ -60,7 +67,7 @@
             </ul>
         </section>
 
-        <section id="assessments">
+        <section id="assessments" class="reveal-on-scroll delay-1">
             <h2>Course Assessments</h2>
             <ul class="assessment-list">
                 <li>
@@ -74,24 +81,27 @@
                 </li>
             </ul>
         </section>
-    
-        <section id="contact">
+
+        <section id="contact" class="reveal-on-scroll delay-2">
             <h2>Contact Me</h2>
+            <p class="contact-tagline">Feel free to reach out for collaborations, projects, or questions.</p>
             <div class="contact-buttons">
-                <div class="contact-text">
-                    📱 0968 566 0915
+                <div class="contact-card">
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">📱 0968 566 0915</div>
                 </div>
-                <div class="contact-text">
-                    ✉️ akSiton@mcm.edu.ph
+                <div class="contact-card">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">✉️ akSiton@mcm.edu.ph</div>
                 </div>
                 <a href="https://github.com/micofone" target="_blank" class="contact-btn">
-                    View my GitHub
+                    GitHub Profile
                 </a>
             </div>
         </section>
+    </main>
     
-</main>
-    <footer>
+    <footer class="reveal-on-scroll delay-3">
         <p>© 2025 Ashley Kyle Siton</p>
     </footer>
 
