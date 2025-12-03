@@ -9,60 +9,88 @@
 <body class = "dark">
     <header>
         <h1 class="logo">Portfolio</h1>
-        <nav>
+        <button id = "nav-toggle" aria-label="Toggle navivation"> N</button>
+        <nav id = "main-nav" aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#achievements">Achievements</a>
             <a href="#projects">Projects</a>
+            <a href ="#assessments">Course Assessments</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button id="theme-toggle">🔦</button>
+        <button id="theme-toggle" aria-pressed="false">🔦</button>
     </header>
+<main>
     <section id="home" class="hero">
-        <img src="profile.jpg" alt="Profile Picture" class="hero-img">
-        <h2>Hi, I'm <span class="highlight">Ashley Kyle P. Siton</span></h2>
-        <p>2nd Year - Computer Science Student</p>
-        <p>Mapua Malayan Colleges Mindanao</p>
-        <p class="small-desc">Passionate about building projects and learning new technologies.</p>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a Computer Science student from Mapua Malayan Colleges Mindanao.<br>
-            who loves exploring technology and creating projects.        
-        </p>
-    </section>
-    <section id="achievements">
-        <h2>Achievements / Certifications</h2>
-        <ul>
-            <li>1st Term Dean's List</li>
-            <li>2nd Term Dean's List</li>
-            <li>3rd Term President's List</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Previous Projects</h2>
-        <ul>
-            <li>FoodHub POS System</li>
-            <li>Technician Repair Tracker System</li>
-        </ul>
-    </section>
-
-   <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-buttons">
-        <div class="contact-text">
-             0968 566 0915
-        </div>
-        <div class="contact-text">
-             akSiton@mcm.edu.ph
-        </div>
-        <a href="https://github.com/micofone" target="_blank" class="contact-btn">
-            GitHub
-        </a>
-    </div>
-    </section>
+            <img src="profile.jpg" alt="Profile Picture" class="hero-img">
+            <div class="hero-text">
+                <p class="hero-kicker">Computer Science Student • 2nd Year</p>
+                <h2>Hi, I'm <span class="highlight">Ashley Kyle P. Siton</span></h2>
+                <p class="hero-subtitle">Mapua Malayan Colleges Mindanao</p>
+                <p class="small-desc">I enjoy building projects, solving problems, and learning new technologies.</p>
+            </div>
+        </section>
     
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a Computer Science student at Mapua Malayan Colleges Mindanao who loves exploring technology,
+                creating projects, and continuously improving my skills.
+            </p>
+        </section>
+       <section id="achievements">
+            <h2>Achievements / Certifications</h2>
+            <ul class="pill-list">
+                <li>1st Term Dean's List</li>
+                <li>2nd Term Dean's List</li>
+                <li>3rd Term President's List</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Previous Projects</h2>
+            <ul class="card-list">
+                <li>
+                    <h3>FoodHub POS System</h3>
+                    <p>A simple point-of-sale system designed to streamline ordering and billing for small food businesses.</p>
+                </li>
+                <li>
+                    <h3>Technician Repair Tracker System</h3>
+                    <p>An application for tracking repair requests, technician assignments, and job status updates.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="assessments">
+            <h2>Course Assessments</h2>
+            <ul class="assessment-list">
+                <li>
+                    <div class="assessment-info">
+                        <h3>Fresh Sense</h3>
+                        <p>A product-style landing page showcasing features, benefits, and a clear call-to-action.</p>
+                    </div>
+                    <a class="assessment-btn" href="https://micofone.github.io/freshsense/index.html" target="_blank" rel="noopener noreferrer">
+                        View Fresh Sense
+                    </a>
+                </li>
+            </ul>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-buttons">
+                <div class="contact-text">
+                    📱 0968 566 0915
+                </div>
+                <div class="contact-text">
+                    ✉️ akSiton@mcm.edu.ph
+                </div>
+                <a href="https://github.com/micofone" target="_blank" class="contact-btn">
+                    View my GitHub
+                </a>
+            </div>
+        </section>
+    
+</main>
     <footer>
         <p>© 2025 Ashley Kyle Siton</p>
     </footer>
